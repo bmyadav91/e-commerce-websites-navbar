@@ -1,0 +1,67 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<title>NavBar</title>
+</head>
+<body>
+<header>
+	<nav>
+		<!--navbar1 desktop view-->
+		<div class="navbar1">
+			<div class="navitem">
+				<div class="logo1">
+					<a href="http://whatbm.com/"><strong>whatBM.com</strong></a>
+				</div>
+			</div>
+			<div class="navitem">
+				<div class="searchbarr searchchmob">
+                    <form method="get">
+                        <input type="text" name="mainsearch" placeholder="search.." class="bi bi-search" />
+                        <span type="submit"><i class="bi bi-search"></i></span>
+                    </form>
+                </div>
+			</div>
+			<div class="navitem">
+				<div class="iconss">
+                    <a href=""><i class="bi bi-person-fill"></i></a>
+                    <a href=""><i class="bi bi-cart-fill cart"></i></a>
+                    <i class="bi bi-list navmenu"></i>
+                </div>
+			</div>
+		</div>
+		<!--navbar2 mobile view-->
+		<div class="navbar2 mobileview">
+			<div class="searchchmob">
+            <form method="get">
+                <input type="text" name="mainsearch" placeholder="search.." class="bi bi-search" />
+                <span type="submit"><i class="bi bi-search"></i></span>
+            </form>
+           </div>
+		</div>
+		<!--menubar hide and show-->
+		<div class="menubarlistt">
+        <ul>
+            <li><a href=""><i class="bi bi-house-fill"></i> Home</a></li>
+            <li><a href=""><i class="bi bi-person-fill"></i> My Account</a></li>
+            <li><a href=""><i class="bi bi-cart-fill"></i> My Order</a></li>
+            <li><a href=""><i class="bi bi-telephone-fill"></i> Support</a></li>
+            <li><a href=""><i class="bi bi-currency-rupee"></i> Become Seller</a></li>
+        </ul>
+    </div>
+	</nav>
+</header>
+<!--start content here-->
+<script>
+	document.querySelector(".navmenu").addEventListener("click", function(){
+    document.querySelector(".menubarlistt").classList.toggle("menubartoggle");
+});
+</script>
+</body>
+</html>
